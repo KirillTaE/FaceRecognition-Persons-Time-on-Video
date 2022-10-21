@@ -79,7 +79,7 @@ while True:
 
     result = face_match(image_crop)
 
-    #image = cv.cvtColor(image, cv.COLOR_BGR2GRAY) #так даже дольше получилось, ну или я криво измерил лол
+    #image = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
     cv.putText(image, f'Face matched with: {result[0]} With distance: {result[1]}',(30,30),cv.FONT_HERSHEY_DUPLEX, 0.5, (0,255,0))
     cv.rectangle(image, (x1, y1), (x2, y2), (255, 255, 0), 2)
     cv.imshow('me', image)
