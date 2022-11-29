@@ -33,6 +33,24 @@
 
 Пример вызова программы с параметрами: `python main.py -pcp photos -ud True -ivp video.mp4 -dv True -ovp new_video.mp4`
 
+## Выходные данные
+
+В конце работы программы будет создано 4 файла:
+  * Time_{`--input_video_path`}.csv
+  <img width="181" alt="image" src="https://user-images.githubusercontent.com/82940632/204598256-10575e3e-ad10-4419-a39f-6186298facfd.png">
+
+  * Time_drop0_{`--input_video_path`}.csv 
+  <img width="182" alt="image" src="https://user-images.githubusercontent.com/82940632/204598348-ec7662e5-0478-4a06-968f-aff6f9cb6b31.png">
+
+  * pie_{`--input_video_path`}.pdf 
+  <img width="424" alt="image" src="https://user-images.githubusercontent.com/82940632/204597855-ad88af7a-226e-4487-9180-005455d15959.png">
+
+  * barh_{`--input_video_path`}.pdf 
+  <img width="825" alt="image" src="https://user-images.githubusercontent.com/82940632/204598040-2234cda0-edba-4a6a-8ced-2f7dc70eb2aa.png">
+
+
+
+
 
 
 
