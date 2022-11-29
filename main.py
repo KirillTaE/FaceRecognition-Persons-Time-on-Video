@@ -15,15 +15,15 @@ import time
 def createParser():
     parser = argparse.ArgumentParser()
     parser.add_argument('-pcp', '--photo_catalog_path', type=str, default='photos',
-                        help="Путь до каталога с фотографиями (default='photos')")
+                        help="Путь до каталога с фотографиями. Внутри данного каталога должны находиться подписанные именами папки с фотографиями людей, которые будут присутствовать на видео (default='photos')")
     parser.add_argument('-ud', '--update_data', type=bool, default=True,
-                        help="Обновляет файл data.pt (вызывать при обновлении фотографий) (default=True)")
+                        help="Обновляет/Создает файл data.pt (вызывать при обновлении фотографий). В этом файле лежат закодированные лица людей (default=True)")
     parser.add_argument('-dp', '--data_path', type=str, default='',
-                        help="Путь до каталога, где находится/создается файл data.pt (default='')")
+                        help="Путь до каталога, где находится файл data.pt (default='')")
     parser.add_argument('-wc', '--web_cam', type=bool, default=False,
-                        help="Считывать видео с веб-камеры (default=False)")
+                        help="Считывать видео с веб-камеры. Файлы с подсчетом времени создаваться не будут (default=False)")
     parser.add_argument('-ivp', '--input_video_path', type=str, default='zoom_1.mp4',
-                        help="Полный путь входного видео (default='zoom_1.mp4')")
+                        help="Полный путь входного видео (default='video.mp4')")
     parser.add_argument('-dv', '--do_video', type=bool, default=False,
                         help="True - создать видео, где будут отмечены все найденные лица. False - не создавать (default=False)")
     parser.add_argument('-ovp', '--output_video_path', type=str, default='new_video.mp4',
