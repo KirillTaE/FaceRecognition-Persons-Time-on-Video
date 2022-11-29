@@ -37,16 +37,16 @@
 ## Выходные данные
 
 В конце работы программы будет создано 4 файла:
-  * Time_{`--input_video_path`}.csv
+  * Time_{`--input_video_path`}.csv - файл с подсчитанным временем присутствия на видео
   <img width="181" alt="image" src="https://user-images.githubusercontent.com/82940632/204598256-10575e3e-ad10-4419-a39f-6186298facfd.png">
 
-  * Time_drop0_{`--input_video_path`}.csv 
+  * Time_drop0_{`--input_video_path`}.csv - файл с подсчитанным временем присутствия на видео (отброшены значения с временем равным нулю)
   <img width="182" alt="image" src="https://user-images.githubusercontent.com/82940632/204598348-ec7662e5-0478-4a06-968f-aff6f9cb6b31.png">
 
-  * barh_{`--input_video_path`}.pdf 
+  * barh_{`--input_video_path`}.pdf - столбчатая диаграмма, на которой показано время присутствия каждого человека в процентах
   <img width="825" alt="image" src="https://user-images.githubusercontent.com/82940632/204598040-2234cda0-edba-4a6a-8ced-2f7dc70eb2aa.png">
   
-  * pie_{`--input_video_path`}.pdf 
+  * pie_{`--input_video_path`}.pdf - круговая диаграмма, на которой показано время присутствия участников видео относительно друг-друга
   <img width="424" alt="image" src="https://user-images.githubusercontent.com/82940632/204597855-ad88af7a-226e-4487-9180-005455d15959.png">
 
 
