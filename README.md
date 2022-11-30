@@ -35,7 +35,10 @@
 
 Пример вызова программы с параметрами: `python main.py -pcp photos -ud True -ivp video.mp4 -dv True -ovp new_video.mp4`
 
+
 ## Выходные данные
+
+### *При первом запуске создастся папка `InceptionResnetV1_VGGFace2` и в нее будет загружена модель `InceptionResnetV1-vggface2`*
 
 В конце работы программы будет создано 4 файла:
   * Time_{`--input_video_path`}.csv - файл с подсчитанным временем присутствия на видео
@@ -44,10 +47,10 @@
   * Time_drop0_{`--input_video_path`}.csv - файл с подсчитанным временем присутствия на видео (отброшены значения с временем равным нулю)
   <img width="182" alt="image" src="https://user-images.githubusercontent.com/82940632/204598348-ec7662e5-0478-4a06-968f-aff6f9cb6b31.png">
 
-  * barh_{`--input_video_path`}.pdf - столбчатая диаграмма, на которой показано время присутствия каждого человека в процентах
-  <img width="825" alt="image" src="https://user-images.githubusercontent.com/82940632/204598040-2234cda0-edba-4a6a-8ced-2f7dc70eb2aa.png">
-  
-  * pie_{`--input_video_path`}.pdf - круговая диаграмма, на которой показано время присутствия участников видео относительно друг-друга
-  <img width="424" alt="image" src="https://user-images.githubusercontent.com/82940632/204597855-ad88af7a-226e-4487-9180-005455d15959.png">
+  * barh_{`--input_video_path`}.jpg - столбчатая диаграмма, на которой показано время присутствия каждого человека в процентах
+  <img width="831" alt="image" src="https://user-images.githubusercontent.com/82940632/204839742-2571ef99-7f2b-4abb-9963-90600a718bc2.png">
 
+  * pie_{`--input_video_path`}.jpg - круговая диаграмма, на которой показано время присутствия участников видео относительно друг-друга
+  <img width="416" alt="image" src="https://user-images.githubusercontent.com/82940632/204839986-7876a7a5-2092-4955-b942-8de17a486718.png">
 
+Также при `--do_video True` будет создано видео с названием `--output_video_path` (default=`new_video.mp4`)
