@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 import sys
 import argparse
 import time
+import os
 
 
 def createParser():
@@ -110,7 +111,16 @@ if __name__ == "__main__":
     ''''''
 
     mtcnn = MTCNN(margin=0, min_face_size=40, keep_all=True, device=device)  # initializing mtcnn for face detection
-    resnet = InceptionResnetV1(pretrained='vggface2').eval()  # initializing resnet for face img to embeding conversion
+    PATH = "InceptionResnetV1_VGGFace2/InceptionResnetV1-vggface2.pt"
+    try:
+        resnet = torch.load(PATH)
+        resnet.eval()
+    except Exception:
+        os.mkdir("InceptionResnetV1_VGGFace2")
+        resnet = InceptionResnetV1(pretrained='vggface2').eval()  # initializing resnet for face img to embeding conversion
+        torch.save(resnet, PATH)
+    # exit()
+
     # resnet.classify = True
 
     doVideo = namespace.do_video
