@@ -1,4 +1,4 @@
-# Facenet pytorch
+# FaceRecognition-Persons-Time-on-Video
 Отслеживание, распознавание лиц, а также подсчет времени присутствия на видео при помощи facenet_pytorch (MTCNN, InceptionResnetV1) и OpenCV
 
 ## Начало работы
