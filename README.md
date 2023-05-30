@@ -15,6 +15,8 @@
     #opencv-python==4.6.0.66
     #pandas==1.5.1
     #matplotlib==3.6.2
+    #yolov5facedetector==1.0.2
+    #gdown==4.7.1
     pip install -r requirements.txt
 
 1. Запуск программы с параметрами по умолчанию:
@@ -32,8 +34,9 @@
   * `-ivp` или `--input_video_path` Полный путь входного видео (default=`video.mp4`)
   * `-dv` или `--do_video` True - создать видео, в котором будут отмечены все найденные и распознанные лица. False - не создавать (default=`False`)
   * `-ovp` или `--output_video_path` Полный путь выходного видео с отмеченными лицами (default=`new_video.mp4`)
+  * `-m` или `--model_name` Полный путь выходного видео с отмеченными лицами (default=`mtcnn`)
 
-Пример вызова программы с параметрами: `python main.py -pcp photos -ud True -ivp video.mp4 -dv True -ovp new_video.mp4`
+Пример вызова программы с параметрами: `python main.py -pcp photos -ud True -ivp video.mp4 -dv True -ovp new_video.mp4 -m mtcnn`
 
 
 ## Выходные данные
