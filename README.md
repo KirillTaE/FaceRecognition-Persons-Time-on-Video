@@ -34,7 +34,7 @@
   * `-ivp` или `--input_video_path` Полный путь входного видео (default=`video.mp4`)
   * `-dv` или `--do_video` True - создать видео, в котором будут отмечены все найденные и распознанные лица. False - не создавать (default=`False`)
   * `-ovp` или `--output_video_path` Полный путь выходного видео с отмеченными лицами (default=`new_video.mp4`)
-  * `-m` или `--model_name` Полный путь выходного видео с отмеченными лицами (default=`mtcnn`)
+  * `-m` или `--model_name` Модель для детектирования лиц (default=`mtcnn`)
 
 Пример вызова программы с параметрами: `python main.py -pcp photos -ud True -ivp video.mp4 -dv True -ovp new_video.mp4 -m mtcnn`
 
